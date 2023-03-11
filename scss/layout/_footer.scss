@@ -34,15 +34,15 @@
       }
     }
     &__btnSubmit{
-      $h:48px;
       display: flex;
       align-items: center;
       justify-content: center;
       background: #{$primary-color};
-      color: #{$text-color};
+      color: #{$text-color} !important;
       text-transform: inherit;
       font-weight: 500;
       font-family: $font-primary;
+      $h:48px;
       @include media-breakpoint-up('m'){
         line-height: calc(#{$h} - 2px);
         border-radius: 8px;

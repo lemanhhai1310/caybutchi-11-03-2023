@@ -1,0 +1,70 @@
+.header{
+  border-bottom: 2px solid #{$text-color};
+  background: #{$body-color};
+  &__item{
+    @include fluidx(116px,60px,min-height);
+  }
+  &__active{
+    color: #{$primary-color};
+    svg{
+      image{
+        filter: invert(98%) sepia(82%) saturate(6661%) hue-rotate(319deg) brightness(101%) contrast(99%);
+      }
+    }
+  }
+  &__btnLogin{
+    background: #{$primary-color};
+    border-radius: 5px;
+    color: #{$text-color} !important;
+    text-transform: inherit;
+    font-family: $font-primary;
+    font-weight: 500;
+    padding: 0 15px;
+    $h:64px;
+    @include media-breakpoint-up('m'){
+      line-height: calc(#{$h} - 2px);
+      border-radius: 8px;
+      padding: 0 30px;
+    }
+    &:hover{
+      background: rgba($primary-color,.8);
+    }
+  }
+  .uk-logo{
+    img{
+      @include fluidx(70px,40px,height);
+    }
+  }
+  .uk-navbar-toggle,
+  .uk-navbar-item{
+    @extend .header__item;
+  }
+  .uk-navbar-right{
+    @include media-breakpoint-up('m'){
+      gap: 20px;
+    }
+  }
+  .uk-navbar-nav{
+    gap: 12px;
+    >li{
+      &.uk-active{
+        >a{
+          @extend .header__active;
+        }
+      }
+      >a{
+        @extend .header__item;
+        text-transform: inherit;
+        color: #000000;
+        font-family: $font-primary;
+        &[aria-expanded="true"],
+        &:hover{
+          @extend .header__active;
+        }
+        .uk-navbar-subtitle{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
