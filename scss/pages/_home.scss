@@ -41,6 +41,12 @@
       font-weight: 500;
       text-transform: inherit;
       background: #{$primary-color};
+      .home__daotao__box &{
+        background: #FFED4A;
+        &:hover{
+          background: rgba(#FFED4A,.8);
+        }
+      }
       $h:48px;
       @include media-breakpoint-up('m'){
         line-height: calc(#{$h} - 2px);
@@ -170,6 +176,117 @@
   &__daotao{
     &__gradient{
       background-color: rgba(253, 201, 72, 0.6);
+    }
+    &__tab{
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      >li{
+        @include media-breakpoint-up('m'){
+          //justify-content: center;
+          //display: flex;
+        }
+        >a{
+          border-radius: 16px 16px 0px 0px;
+          justify-content: center;
+          height: 60px;
+          box-sizing: border-box;
+          background: #{$primary-color} !important;
+          color: #{$text-color} !important;
+          font-family: $font-primary;
+          font-weight: 600;
+          text-transform: inherit !important;
+          //font-size: 24px !important;
+          @include fluidx(24px,16px,font-size);
+          @include media-breakpoint-up('m'){
+            min-width: 400px;
+          }
+        }
+        &.uk-active{
+          >a{
+            background-color: #FFED4A !important;
+            &:after{
+              content: "";
+              width: 0;
+              height: 0;
+              $x:15px;
+              border-left: #{$x} solid transparent;
+              border-right: #{$x} solid transparent;
+
+              border-top: #{$x} solid #FFED4A;
+              top: calc(100% + 6px);
+              position: absolute;
+              z-index: 20;
+            }
+          }
+        }
+      }
+    }
+    &__box{
+      //min-height: 480px;
+      background-color: #{$primary-color};
+      margin: 0 !important;
+      border-top: 6px solid #FFED4A;
+      $x:100px;
+      &__img{
+        position: relative;
+        clip-path: polygon(#{$x} 0, 100% 0, 100% 100%, #{$x} 100%, 0 50%);
+      }
+      &__bg1{
+        clip-path: polygon(#{$x} 0, 100% 0, 100% 100%, #{$x} 100%, 0 50%);
+        background-color: #FFED4A;
+        left: -17px;
+      }
+      &__bg2{
+        $y:calc(#{$x} - 6px);
+        clip-path: polygon(#{$y} 0, 100% 0, 100% 100%, #{$y} 100%, 0 50%);
+        left: calc(0px - (17px + 25px));
+        background: #3E9E82;
+      }
+      &__bg3{
+        $y:calc(#{$x} - 10px);
+        clip-path: polygon(#{$y} 0, 100% 0, 100% 100%, #{$y} 100%, 0 50%);
+        left: calc(0px - (17px + 25px + 30px));
+        background-color: #FFED4A;
+      }
+      &__txt{
+        line-height: 1.75;
+        color: #{$text-color};
+        font-family: $font-primary;
+      }
+      .uk-slider-container{
+        background-color: #{$primary-color};
+        position: relative;
+        z-index: 10;
+      }
+      &__nav{
+        $w1:80px;
+        width: #{$w1};
+        height: #{$w1};
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 15px;
+        &.uk-invisible{
+          visibility: visible !important;
+          cursor: not-allowed;
+        }
+        &--previous{
+          right: calc(100% - (#{$w1}/2) - 15px);
+          background: #FDC948;
+          &.uk-invisible{
+            background: rgba(206, 206, 206, 0.8);
+          }
+        }
+        &--next{
+          justify-content: right;
+          left: calc(100% - (#{$w1}/2) - 15px);
+          background: #FDC948;
+          &.uk-invisible{
+            background: rgba(206, 206, 206, 0.8);
+          }
+        }
+      }
     }
   }
 }

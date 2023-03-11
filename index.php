@@ -188,7 +188,156 @@
                 <div class="home__section__title2 item__12">Khoá học của chúng tôi</div>
             </div>
             <div class="item__60-30">
+                <ul class="home__daotao__tab uk-subnav uk-subnav-pill uk-flex-center uk-child-width-auto@m" uk-toggle="cls: uk-child-width-expand; mode: media; media: (max-width: 959.8px)" uk-switcher="connect: .switcher-container">
+                    <li><a href="#">Khoá học dài hạn</a></li>
+                    <li><a href="#">Khoá học ngắn hạn</a></li>
+                </ul>
+                <ul class="home__daotao__box uk-switcher switcher-container uk-margin">
+                    <li>
+                        <div uk-slider="finite: true">
 
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container uk-position-z-index">
+                                    <ul class="uk-slider-items uk-child-width-1-1">
+                                        <?php for ($i=1;$i<=2;$i++): ?>
+                                        <li>
+                                            <div class="uk-grid uk-flex-middle" uk-grid>
+                                                <div class="uk-width-expand">
+                                                    <div class="uk-card uk-card-body">
+                                                        <p class="home__daotao__box__txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                        <div class="item__40-20">
+                                                            <a href="" class="home__about__btnMore uk-border-rounded uk-button uk-button-secondary">
+                                                                Xem chi tiết
+                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M15.138 7.52861L10.4714 2.86195C10.3456 2.74051 10.1772 2.67331 10.0024 2.67483C9.82762 2.67635 9.66041 2.74646 9.53681 2.87007C9.4132 2.99367 9.34309 3.16088 9.34157 3.33568C9.34005 3.51048 9.40725 3.67888 9.52869 3.80461L13.0574 7.33328H1.33335C1.15654 7.33328 0.986973 7.40352 0.861949 7.52854C0.736925 7.65357 0.666687 7.82313 0.666687 7.99995C0.666687 8.17676 0.736925 8.34633 0.861949 8.47135C0.986973 8.59637 1.15654 8.66661 1.33335 8.66661H13.0574L9.52869 12.1953C9.46501 12.2568 9.41423 12.3303 9.37929 12.4117C9.34435 12.493 9.32596 12.5805 9.32519 12.669C9.32442 12.7575 9.34129 12.8453 9.37481 12.9272C9.40833 13.0092 9.45783 13.0836 9.52042 13.1462C9.58302 13.2088 9.65745 13.2583 9.73938 13.2918C9.82132 13.3253 9.9091 13.3422 9.99762 13.3414C10.0861 13.3407 10.1736 13.3223 10.255 13.2873C10.3363 13.2524 10.4099 13.2016 10.4714 13.1379L15.138 8.47128C15.263 8.34626 15.3332 8.17672 15.3332 7.99995C15.3332 7.82317 15.263 7.65363 15.138 7.52861Z" fill="currentColor"/>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-auto@m">
+                                                    <div class="uk-position-relative">
+                                                        <div class="uk-cover-container uk-visible@m home__daotao__box__bg3 uk-position-center-left">
+                                                            <canvas width="349" height="406"></canvas>
+                                                        </div>
+                                                        <div class="uk-cover-container uk-visible@m home__daotao__box__bg2 uk-position-center-left">
+                                                            <canvas width="382" height="444"></canvas>
+                                                        </div>
+                                                        <div class="uk-cover-container uk-visible@m home__daotao__box__bg1 uk-position-center-left">
+                                                            <canvas width="413" height="480"></canvas>
+                                                        </div>
+                                                        <div class="uk-cover-container home__daotao__box__img">
+                                                            <img src="images/Rectangle140378.png" alt="" uk-cover="">
+                                                            <canvas width="413" height="480"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <?php endfor; ?>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-hidden@s uk-light">
+                                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                                <div class="uk-visible@s">
+                                    <a class="home__daotao__box__nav home__daotao__box__nav--previous uk-position-center-left-out uk-position-small" href="#" uk-slider-item="previous">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.07348 10.0042L15.5554 2.52195C15.7614 2.31642 15.8748 2.04163 15.8748 1.74862C15.8748 1.45545 15.7614 1.18081 15.5554 0.974959L14.8998 0.319675C14.6941 0.113496 14.4192 0 14.1262 0C13.8332 0 13.5585 0.113496 13.3527 0.319675L4.44421 9.22797C4.23755 9.43447 4.12437 9.71041 4.12519 10.0037C4.12437 10.2984 4.23738 10.574 4.44421 10.7807L13.3444 19.6803C13.5502 19.8865 13.8249 20 14.118 20C14.411 20 14.6857 19.8865 14.8917 19.6803L15.5471 19.025C15.9736 18.5985 15.9736 17.9042 15.5471 17.4779L8.07348 10.0042Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                    <a class="home__daotao__box__nav home__daotao__box__nav--next uk-position-center-right-out uk-position-small" href="#" uk-slider-item="next">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9265 10.0042L4.44451 2.52195C4.23849 2.31642 4.12516 2.04163 4.12516 1.74862C4.12516 1.45545 4.23849 1.18081 4.44451 0.974959L5.10012 0.319675C5.30581 0.113496 5.58077 0 5.87378 0C6.16678 0 6.44142 0.113496 6.64727 0.319675L15.5557 9.22797C15.7624 9.43447 15.8756 9.71041 15.8748 10.0037C15.8756 10.2984 15.7626 10.574 15.5557 10.7807L6.65556 19.6803C6.44971 19.8865 6.17508 20 5.88191 20C5.5889 20 5.31426 19.8865 5.10825 19.6803L4.4528 19.025C4.0263 18.5985 4.0263 17.9042 4.4528 17.4779L11.9265 10.0042Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div uk-slider="finite: true">
+
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="uk-slider-items uk-child-width-1-1">
+                                        <?php for ($i=1;$i<=2;$i++): ?>
+                                            <li>
+                                                <div class="uk-grid uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card uk-card-body">
+                                                            <p class="home__daotao__box__txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                            <div class="item__40-20">
+                                                                <a href="" class="home__about__btnMore uk-border-rounded uk-button uk-button-secondary uk-margin-small-right">
+                                                                    Khoá học trực tiếp
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M15.138 7.52861L10.4714 2.86195C10.3456 2.74051 10.1772 2.67331 10.0024 2.67483C9.82762 2.67635 9.66041 2.74646 9.53681 2.87007C9.4132 2.99367 9.34309 3.16088 9.34157 3.33568C9.34005 3.51048 9.40725 3.67888 9.52869 3.80461L13.0574 7.33328H1.33335C1.15654 7.33328 0.986973 7.40352 0.861949 7.52854C0.736925 7.65357 0.666687 7.82313 0.666687 7.99995C0.666687 8.17676 0.736925 8.34633 0.861949 8.47135C0.986973 8.59637 1.15654 8.66661 1.33335 8.66661H13.0574L9.52869 12.1953C9.46501 12.2568 9.41423 12.3303 9.37929 12.4117C9.34435 12.493 9.32596 12.5805 9.32519 12.669C9.32442 12.7575 9.34129 12.8453 9.37481 12.9272C9.40833 13.0092 9.45783 13.0836 9.52042 13.1462C9.58302 13.2088 9.65745 13.2583 9.73938 13.2918C9.82132 13.3253 9.9091 13.3422 9.99762 13.3414C10.0861 13.3407 10.1736 13.3223 10.255 13.2873C10.3363 13.2524 10.4099 13.2016 10.4714 13.1379L15.138 8.47128C15.263 8.34626 15.3332 8.17672 15.3332 7.99995C15.3332 7.82317 15.263 7.65363 15.138 7.52861Z" fill="currentColor"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="home__about__btnMore uk-border-rounded uk-button uk-button-secondary">
+                                                                    Khoá học online
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M15.138 7.52861L10.4714 2.86195C10.3456 2.74051 10.1772 2.67331 10.0024 2.67483C9.82762 2.67635 9.66041 2.74646 9.53681 2.87007C9.4132 2.99367 9.34309 3.16088 9.34157 3.33568C9.34005 3.51048 9.40725 3.67888 9.52869 3.80461L13.0574 7.33328H1.33335C1.15654 7.33328 0.986973 7.40352 0.861949 7.52854C0.736925 7.65357 0.666687 7.82313 0.666687 7.99995C0.666687 8.17676 0.736925 8.34633 0.861949 8.47135C0.986973 8.59637 1.15654 8.66661 1.33335 8.66661H13.0574L9.52869 12.1953C9.46501 12.2568 9.41423 12.3303 9.37929 12.4117C9.34435 12.493 9.32596 12.5805 9.32519 12.669C9.32442 12.7575 9.34129 12.8453 9.37481 12.9272C9.40833 13.0092 9.45783 13.0836 9.52042 13.1462C9.58302 13.2088 9.65745 13.2583 9.73938 13.2918C9.82132 13.3253 9.9091 13.3422 9.99762 13.3414C10.0861 13.3407 10.1736 13.3223 10.255 13.2873C10.3363 13.2524 10.4099 13.2016 10.4714 13.1379L15.138 8.47128C15.263 8.34626 15.3332 8.17672 15.3332 7.99995C15.3332 7.82317 15.263 7.65363 15.138 7.52861Z" fill="currentColor"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-auto@m">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container uk-visible@m home__daotao__box__bg3 uk-position-center-left">
+                                                                <canvas width="349" height="406"></canvas>
+                                                            </div>
+                                                            <div class="uk-cover-container uk-visible@m home__daotao__box__bg2 uk-position-center-left">
+                                                                <canvas width="382" height="444"></canvas>
+                                                            </div>
+                                                            <div class="uk-cover-container uk-visible@m home__daotao__box__bg1 uk-position-center-left">
+                                                                <canvas width="413" height="480"></canvas>
+                                                            </div>
+                                                            <div class="uk-cover-container home__daotao__box__img">
+                                                                <img src="images/Rectangle140378.png" alt="" uk-cover="">
+                                                                <canvas width="413" height="480"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        <?php endfor; ?>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-hidden@s uk-light">
+                                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                                <div class="uk-visible@s">
+                                    <a class="home__daotao__box__nav home__daotao__box__nav--previous uk-position-center-left-out uk-position-small" href="#" uk-slider-item="previous">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.07348 10.0042L15.5554 2.52195C15.7614 2.31642 15.8748 2.04163 15.8748 1.74862C15.8748 1.45545 15.7614 1.18081 15.5554 0.974959L14.8998 0.319675C14.6941 0.113496 14.4192 0 14.1262 0C13.8332 0 13.5585 0.113496 13.3527 0.319675L4.44421 9.22797C4.23755 9.43447 4.12437 9.71041 4.12519 10.0037C4.12437 10.2984 4.23738 10.574 4.44421 10.7807L13.3444 19.6803C13.5502 19.8865 13.8249 20 14.118 20C14.411 20 14.6857 19.8865 14.8917 19.6803L15.5471 19.025C15.9736 18.5985 15.9736 17.9042 15.5471 17.4779L8.07348 10.0042Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                    <a class="home__daotao__box__nav home__daotao__box__nav--next uk-position-center-right-out uk-position-small" href="#" uk-slider-item="next">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9265 10.0042L4.44451 2.52195C4.23849 2.31642 4.12516 2.04163 4.12516 1.74862C4.12516 1.45545 4.23849 1.18081 4.44451 0.974959L5.10012 0.319675C5.30581 0.113496 5.58077 0 5.87378 0C6.16678 0 6.44142 0.113496 6.64727 0.319675L15.5557 9.22797C15.7624 9.43447 15.8756 9.71041 15.8748 10.0037C15.8756 10.2984 15.7626 10.574 15.5557 10.7807L6.65556 19.6803C6.44971 19.8865 6.17508 20 5.88191 20C5.5889 20 5.31426 19.8865 5.10825 19.6803L4.4528 19.025C4.0263 18.5985 4.0263 17.9042 4.4528 17.4779L11.9265 10.0042Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
