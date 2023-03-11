@@ -3,9 +3,9 @@
     <!--footer__top-->
     <div class="footer__top uk-section">
         <div class="uk-container">
-            <div class="uk-grid-70-m" uk-grid>
+            <div class="uk-grid-70-m uk-grid" uk-grid>
                 <div class="uk-width-expand">
-                    <div class="uk-grid-70-m uk-child-width-expand@m" uk-grid>
+                    <div class="uk-grid-70-m uk-child-width-expand@m uk-grid" uk-grid>
                         <div class="uk-width uk-hidden@m">
                             <ul class="footer__accordion" uk-accordion>
                                 <li class="uk-open">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
 
-                        <div class="uk-margin uk-grid-20" uk-grid>
+                        <div class="uk-margin uk-grid-20 uk-grid" uk-grid>
                             <div class="uk-width-1-2">
                                 <label class="footer__form__label uk-form-label" for="form-stacked-select">Email*</label>
                                 <div class="uk-form-controls">
