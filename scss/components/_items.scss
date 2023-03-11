@@ -1,4 +1,16 @@
 .item{
+  $x:40;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:30;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:20;
   &__#{$x}{
     &:nth-child(n+2){
@@ -17,6 +29,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:12;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:10;
   &__#{$x}{
     &:nth-child(n+2){
@@ -27,6 +45,19 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+    }
+  }
+
+
+
+  $max:40;
+  $min:20;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
     }
   }
 }
