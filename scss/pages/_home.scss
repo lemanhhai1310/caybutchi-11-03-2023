@@ -62,6 +62,110 @@
       padding-top: 80px;
       padding-bottom: 80px;
     }
+    &__title1{
+      margin: 0;
+      @include fluidx(40px,34px,font-size);
+      font-family: $font-secondary;
+      font-weight: 700;
+      line-height: (48/40);
+      .old &{
+        color: #{$primary-color};
+      }
+    }
+    &__title2{
+      color: #{$text-color};
+      @include fluidx(36px,30px,font-size);
+      line-height: 1.56;
+      font-family: $font-primary;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &:after{
+        content: "";
+        width: 120px;
+        height: 3px;
+        display: flex;
+        margin-top: 12px;
+        background: currentColor;
+        .old &{
+          background: #{$primary-color};
+        }
+      }
+    }
+  }
+  &__thanhtuu{
+    $x:80px;
+    &__card{
+      background: #{$primary-color};
+      padding-top: 0;
+      text-align: center;
+      clip-path: polygon(50% #{$x}, 100% 0, 100% calc(100% - #{$x}), 50% 100%, 0 calc(100% - #{$x}), 0 0);
+    }
+    &__box{
+      text-align: center;
+    }
+    &__boxCover{
+      z-index: 20;
+      //min-height: 590px;
+      padding: 20px;
+      padding-top: 0;
+      padding-bottom: #{$x};
+
+    }
+    &__txt{
+      color: #{$text-color};
+      line-height: 1.75;
+      font-family: $font-primary;
+      font-weight: 500;
+    }
+    &__divider{
+      height: 8px;
+      background-color: #fff;
+      position: relative;
+      $w:40px;
+      $y: calc(0px - 20px - (#{$w}/2));
+      &:before{
+        left: #{$y};
+      }
+      &:after{
+        right: #{$y};
+      }
+      &:before,&:after{
+        content: "";
+        width: #{$w};
+        height: #{$w};
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__title{
+      color: #{$text-color};
+      line-height: 1;
+      @include fluidx(40px,34px,font-size);
+      font-family: $font-primary;
+      font-weight: 700;
+    }
+    &__box1{
+      background: #FFFFFF;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+      margin-top: -10px;
+      &:before{
+        content: "";
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        border: 2px solid #{$primary-color};
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
   }
   &__daotao{
     &__gradient{

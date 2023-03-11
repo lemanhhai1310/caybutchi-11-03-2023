@@ -29,7 +29,7 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="header uk-navbar-container uk-navbar-transparent">
         <div class="uk-container">
-            <div class="uk-navbar" uk-navbar>
+            <div class="uk-navbar" uk-navbar="align: center">
 
                 <div class="uk-navbar-left">
                     <div class="uk-hidden@m">
@@ -102,7 +102,7 @@
                                     <div class="uk-navbar-subtitle">Khoá học</div>
                                 </div>
                             </a>
-                            <div class="uk-navbar-dropdown">
+                            <div class="uk-navbar-dropdown arrow_box">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li><a href="#">Khoá học dài hạn</a></li>
                                     <li><a href="#">Khoá học ngắn hạn</a></li>
@@ -126,7 +126,7 @@
                                     <div class="uk-navbar-subtitle">Tin tức-Tuyển sinh</div>
                                 </div>
                             </a>
-                            <div class="uk-navbar-dropdown">
+                            <div class="uk-navbar-dropdown arrow_box">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li><a href="#">CBN tuyển sinh</a></li>
                                     <li><a href="#">Hoạt động CBN</a></li>
