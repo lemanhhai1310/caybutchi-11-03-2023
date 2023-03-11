@@ -1,7 +1,7 @@
 <!--footer-->
 <footer class="footer">
     <!--footer__top-->
-    <div class="footer__top uk-section">
+    <div class="footer__top uk-section home__section">
         <div class="uk-container">
             <div class="uk-grid-70-m uk-grid" uk-grid>
                 <div class="uk-width-expand">

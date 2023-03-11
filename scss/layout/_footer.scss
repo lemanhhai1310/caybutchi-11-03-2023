@@ -80,10 +80,6 @@
   }
   &__top{
     background-color: #{$primary-color};
-    @include media-breakpoint-up('m'){
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
     &__title{
       line-height: 1;
       color: #{$text-color};

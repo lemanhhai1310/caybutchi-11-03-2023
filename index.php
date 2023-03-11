@@ -26,12 +26,12 @@
 <!--/Slider-->
 
 <!--About-->
-<div class="home__about uk-section">
+<div class="home__about uk-section home__section">
     <div class="uk-container">
         <div class="uk-child-width-1-2@m uk-grid-80-m uk-flex-middle uk-grid" uk-grid>
             <div class="uk-flex-last@m">
                 <div class="home__about__coverImg uk-cover-container uk-border-rounded uk-background-muted">
-                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                    <img src="images/Rectangle140378.png" alt="" uk-cover="">
                     <canvas width="571" height="360"></canvas>
                 </div>
             </div>
@@ -71,4 +71,31 @@
     </div>
 </div>
 <!--/About-->
+
+<!--Thành tựu-->
+<div class="home__sectionbg uk-background-norepeat uk-background-top-center" data-src="images/pngegg51.png" uk-img>
+    <!--Banner-->
+    <div class="uk-text-center"><img src="images/Frame2020.png" alt=""></div>
+    <!--/Banner-->
+
+    <div class="uk-section home__section">
+        <div class="uk-container">
+
+        </div>
+    </div>
+
+</div>
+<!--/Thành tựu-->
+
+<!--Đào tạo-->
+<div class="home__daotao uk-position-relative uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg_Rectangle140270.png" uk-img>
+    <div class="home__daotao__gradient uk-position-cover"></div>
+    <div class="uk-section home__section uk-position-relative uk-position-z-index">
+        <div class="uk-container">
+
+        </div>
+    </div>
+</div>
+<!--/Đào tạo-->
+
 <?php require "template-parts/layouts/footer.php"; ?>

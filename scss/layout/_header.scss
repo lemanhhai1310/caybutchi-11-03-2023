@@ -3,6 +3,12 @@
   background: #{$body-color};
   &__item{
     @include fluidx(116px,60px,min-height);
+    .uk-sticky-below &{
+      //transition: min-height .3s ease-in;
+      @include media-breakpoint-up('m'){
+        //min-height: 80px !important;
+      }
+    }
   }
   &__active{
     color: #{$primary-color};
