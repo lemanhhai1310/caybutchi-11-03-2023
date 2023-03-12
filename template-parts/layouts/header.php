@@ -1,4 +1,4 @@
-<?php $projectName = "Cây bút chì L"; ?>
+<?php $projectName = "Cây bút nhí L"; ?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -26,6 +26,7 @@
 <body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<?php if (isset($isLogin) && !$isLogin): ?>
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="header uk-navbar-container uk-navbar-transparent">
         <div class="uk-container">
@@ -229,3 +230,4 @@
         </div>
     </nav>
 </div>
+<?php endif; ?>

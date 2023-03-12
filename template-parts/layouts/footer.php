@@ -1,3 +1,4 @@
+<?php if (isset($isLogin) && !$isLogin): ?>
 <!--footer-->
 <footer class="footer">
     <!--footer__top-->
@@ -131,6 +132,7 @@
     <!--/footer__bottom-->
 </footer>
 <!--/footer-->
+<?php endif; ?>
 </div>
 <!--/app-->
 </body>
