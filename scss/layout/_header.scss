@@ -1,6 +1,7 @@
 .header{
   border-bottom: 2px solid #{$text-color};
   background: #{$body-color};
+  z-index: 981;
   &__item{
     @include fluidx(116px,60px,min-height);
     .uk-sticky-below &{
