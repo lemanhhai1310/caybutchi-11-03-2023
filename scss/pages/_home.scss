@@ -290,13 +290,73 @@
     }
   }
   &__giangvien{
-
+    &__nameP{
+      color: #{$primary-color};
+      font-size: 20px;
+      font-family: $font-primary;
+      font-weight: 600;
+    }
+    &__txt{
+      display: flex;
+      align-items: center;
+      color: #{$text-color};
+      font-size: 16px;
+      font-family: $font-primary;
+      font-weight: 500;
+      svg{
+        margin-right: 12px;
+      }
+    }
   }
   &__cbn{
     &__icon{
       left: 100%;
       width: max-content;
       bottom: 15px;
+    }
+    &__card{
+      padding: 20px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      &--hover{
+        border: 2px solid transparent;
+        &:hover{
+          border-color: #{$primary-color};
+        }
+      }
+      //min-height: 544px;
+      &__title{
+        line-height: 1;
+        color: #{$text-color};
+        font-family: $font-primary;
+        font-weight: 600;
+        @include fluidx(24px,20px,font-size);
+        a{
+          color: #{$text-color};
+        }
+      }
+      &__desc{
+        color: #000;
+        line-height: 1.75;
+        font-size: 16px;
+        font-family: $font-primary;
+      }
+      &__price{
+        color: #{$primary-color};
+        line-height: 1;
+        font-family: $font-primary;
+        font-weight: 700;
+      }
+      &__txt{
+        color: rgba(38, 38, 38, 0.8);
+        line-height: 1;
+        font-size: 14px;
+        font-family: $font-primary;
+        svg{
+          margin-right: 8px;
+        }
+      }
     }
   }
   &__tailieu{
@@ -305,6 +365,109 @@
       right: 100%;
       width: max-content;
       bottom: 0;
+    }
+    &__card{
+      background: #{$primary-color};
+      //min-height: 458px;
+      border-radius: 8px;
+      padding: 20px;
+      &__name{
+        @include fluidx(20px,18px,font-size);
+        font-family: $font-primary;
+        font-weight: 600;
+        line-height: 1.4;
+        a{
+
+        }
+      }
+      &__price{
+        color: #BD2411;
+        line-height: 1;
+        font-family: $font-primary;
+        font-weight: 700;
+        @include fluidx(20px,18px,font-size);
+      }
+      &__priceOld{
+        text-decoration-line: line-through;
+        color: rgba(38, 38, 38, 0.6);
+        font-size: 14px;
+        line-height: 1.07;
+        font-family: $font-primary;
+      }
+      &__btnBuy{
+        font-family: $font-primary;
+        font-weight: 500;
+        text-transform: inherit;
+        font-size: 16px;
+        color: #{$text-color};
+        background: #FFED4A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        $h:48px;
+        @include media-breakpoint-up('m'){
+          line-height: calc(#{$h} - 2px);
+          border-radius: 8px;
+        }
+        svg{
+          margin-right: 8px;
+        }
+      }
+    }
+    &__dotnav{
+      @include fluidx(80px,40px,margin-top);
+      margin-bottom: 0;
+      >*{
+        >*{
+          width: 12px;
+          height: 4px;
+          border-radius: 2px;
+          background: #DEDEDE;
+          border-color: #DEDEDE;
+          &:hover{
+            background: #{$primary-color};
+          }
+        }
+        &.uk-active{
+          >*{
+            width: 20px;
+            background: #{$primary-color};
+          }
+        }
+      }
+    }
+    &__uk-slider-container{
+      position: relative;
+      z-index: 10;
+    }
+    &__sliderNav{
+      $w1:60px;
+      width: #{$w1};
+      height: #{$w1};
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      padding: 10px;
+      &.uk-invisible{
+        visibility: visible !important;
+        cursor: not-allowed;
+      }
+      &--previous{
+        right: calc(100% - (#{$w1}/2) - 15px);
+        background: #FDC948;
+        &.uk-invisible{
+          background: rgba(206, 206, 206, 0.8);
+        }
+      }
+      &--next{
+        justify-content: right;
+        left: calc(100% - (#{$w1}/2) - 15px);
+        background: #FDC948;
+        &.uk-invisible{
+          background: rgba(206, 206, 206, 0.8);
+        }
+      }
     }
   }
   &__tintuc{
