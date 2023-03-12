@@ -14,14 +14,14 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.6/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1678613465">
+    <link rel="stylesheet" href="style.css?v=1678618041">
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.6/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1678613465"></script>
+    <script src="js/app.js?v=1678618041"></script>
 </head>
 <body class="">
 <!--app-->
@@ -284,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__80-40" uk-grid>
+            <div class="item__80-40 uk-grid-109-m uk-grid" uk-grid>
                 <div class="uk-width-expand">
                     <article class="uk-article about__article">
                         <h1 class="uk-article-title khoahoc__title1">Chào mừng các em học sinh bước vào lớp 3!</h1>
@@ -554,17 +554,10 @@
                                     <textarea class="footer__form__input uk-textarea" rows="5" placeholder="Quý phụ huynh để lại khoá học quan tâm và nguyện vọng để được tư vấn." aria-label="Textarea"></textarea>
                                 </div>
                             </div>
-                            <button class="footer__form__btnSubmit uk-button uk-button-secondary uk-width uk-border-rounded">
-                                Gửi thông tin
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_226_231)">
-                                        <path d="M0.218874 15.2698C0.0874002 15.874 0.551255 16.1297 0.981658 15.9367L15.5282 8.47783H15.5296C15.7031 8.37996 15.8039 8.20361 15.8039 8.00017C15.8039 7.79662 15.7031 7.62014 15.5296 7.52232H15.5282L0.981658 0.0632796C0.551255 -0.12972 0.0874002 0.12611 0.218874 0.730296C0.227771 0.77122 1.08775 4.60191 1.55532 6.68528L9.14884 8.00013L1.55532 9.31483C1.08775 11.3981 0.227731 15.2288 0.218874 15.2698Z" fill="currentColor"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_226_231">
-                                            <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
-                                    </defs>
+                            <button class="footer__form__btnSubmit uk-spinner uk-button uk-button-secondary uk-width uk-border-rounded">
+                                Loading
+                                <svg width="16" height="16" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                    <circle fill="none" stroke="#000" cx="15" cy="15" r="14"></circle>
                                 </svg>
                             </button>
                         </form>

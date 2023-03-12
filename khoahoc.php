@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="item__80-40" uk-grid>
+        <div class="item__80-40 uk-grid-109-m uk-grid" uk-grid>
             <div class="uk-width-expand">
                 <article class="uk-article about__article">
                     <h1 class="uk-article-title khoahoc__title1">Chào mừng các em học sinh bước vào lớp 3!</h1>
