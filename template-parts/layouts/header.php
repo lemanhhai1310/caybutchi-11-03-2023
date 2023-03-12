@@ -86,7 +86,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="khoahoc.php">
                             <div class="uk-text-center">
                                 <div>
                                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

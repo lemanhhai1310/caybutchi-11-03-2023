@@ -1,0 +1,47 @@
+.khoahoc{
+  &__title{
+    @extend .home__section__title2;
+    //justify-content: flex-start;
+    align-items: flex-start;
+    &:after{
+      background: #{$primary-color};
+    }
+  }
+  &__title1{
+    color: #BD2411;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: $font-primary;
+    line-height: 1;
+  }
+  &__table{
+    &__link{
+      color: #{$primary-color};
+      font-size: 16px;
+      font-family: $font-primary;
+      font-weight: 500;
+    }
+    tr{
+      th,td{
+        border: 1px solid #666;
+      }
+      td{
+        color: #333333;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-primary;
+        text-align: center;
+        background: #FFFFFF;
+      }
+      th{
+        background: #EEEEEE;
+        text-transform: inherit;
+        text-align: center;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $font-primary;
+      }
+    }
+  }
+}

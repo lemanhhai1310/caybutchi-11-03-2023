@@ -35,7 +35,7 @@
             </div>
             <div>
                 <article class="uk-article about__article">
-                    <h1 class="uk-article-title">Lời nói đầu...</h1>
+                    <h1 class="uk-article-title about__article__title1">Lời nói đầu...</h1>
                     <p>Quý phụ huynh và các em học sinh thân mến,</p>
                     <p>Cây Bút Nhí nổi bật là đơn vị tiên phong đưa xu hướng học trực tuyến với giáo viên và lộ trình chuẩn Quốc Tế để mang lại khóa học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn đang sinh sống và làm việc tại nước ngoài.</p>
                     <p>Dốc hết tâm huyết với học viên - mang lại những trải nghiệm tuyệt vời trong suốt quá trình theo học tỉ mỉ, tận tình, không lý do, không tư lợi hướng tới điều tốt nhất cho khách hàng và nhân viên cơ hội sẻ chia - Hợp tác cùng phát triển. Cây Bút Nhí  nổi bật là đơn vị tiên phong đưa xu hướng học trực tuyến với giáo viên và lộ trình chuẩn Quốc Tế để mang lại khóa học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn đang sinh sống và làm việc tại nước ngoài.</p>
@@ -53,7 +53,7 @@
             </div>
             <div>
                 <article class="uk-article about__article">
-                    <h1 class="uk-article-title">Về Cây Bút Nhí</h1>
+                    <h1 class="uk-article-title about__article__title1">Về Cây Bút Nhí</h1>
                     <p>Cây Bút Nhí nổi bật là đơn vị tiên phong đưa xu hướng học trực tuyến với giáo viên và lộ trình chuẩn Quốc Tế để mang lại khóa học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn đang sinh sống và làm việc tại nước ngoài.</p>
                     <p>Dốc hết tâm huyết với học viên - mang lại những trải nghiệm tuyệt vời trong suốt quá trình theo học tỉ mỉ, tận tình, không lý do, không tư lợi hướng tới điều tốt nhất cho khách hàng và nhân viên cơ hội sẻ chia - Hợp tác cùng phát triển. Cây Bút Nhí  nổi bật là đơn vị tiên phong đưa xu hướng học trực tuyến với giáo viên và lộ trình chuẩn Quốc Tế để mang lại khóa học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn đang sinh sống và làm việc tại nước ngoài.Dốc hết tâm huyết với học viên - mang lại những trải nghiệm tuyệt vời trong suốt quá trình theo học tỉ mỉ, tận tình, không lý do.</p>
                     <p>Dốc hết tâm huyết với học viên - mang lại những trải nghiệm tuyệt vời trong suốt quá trình theo học tỉ mỉ, tận tình, không lý do, không tư lợi hướng tới điều tốt nhất cho khách hàng và nhân viên cơ hội sẻ chia - Hợp tác cùng phát triển. </p>
