@@ -1,0 +1,116 @@
+.tintuc{
+  &__navbar{
+    border-bottom: 1px solid rgba(253, 201, 72, 0.4);
+    .uk-navbar-nav{
+      @include media-breakpoint-up('m'){
+        gap: 40px;
+      }
+      >li{
+        >a{
+          color: rgba(38, 38, 38, 0.6);
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $font-primary;
+          text-transform: inherit;
+          min-height: 60px;
+          position: relative;
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: calc(102% - 0px);
+            bottom: -1px;
+            height: 1px;
+            background-color: currentColor;
+            transition: .3s ease-in-out;
+            transition-property: right;
+          }
+          &:hover{
+            color: #BD2411;
+            &:before{
+              right: 0;
+            }
+          }
+        }
+        &.uk-active{
+          >a{
+            color: #BD2411;
+            &:before{
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__card{
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    &:hover{
+      border-color: #{$primary-color};
+    }
+    &__img{
+      border-radius: 8px;
+    }
+    &__title{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.75;
+      font-family: $font-primary;
+      color: #{$text-color};
+      a{
+        color: #{$text-color};
+      }
+    }
+    &__desc{
+      color: rgba(38, 38, 38, 0.8);
+      font-size: 14px;
+      line-height: 1.71;
+      font-family: $font-primary;
+    }
+    &__linkMore{
+      text-decoration-line: underline;
+      color: #{$primary-color};
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $font-primary;
+    }
+  }
+  &__title{
+    color: #{$text-color};
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    font-family: $font-primary;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #{$primary-color};
+  }
+  &__title1{
+    color: #{$text-color};
+    font-size: 14px;
+    line-height: 1.43;
+    font-weight: 500;
+    font-family: $font-primary;
+    a{
+      color: #{$text-color};
+    }
+  }
+  &__time{
+    color: #AAAAAA;
+    font-size: 14px;
+    line-height: 1;
+  }
+  &__category{
+    color: #BD2411;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  &__divider{
+    color: #000000;
+    font-size: 16px;
+    line-height: 1;
+  }
+}
