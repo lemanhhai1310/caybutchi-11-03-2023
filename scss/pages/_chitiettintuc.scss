@@ -1,0 +1,37 @@
+.chitiettintuc{
+  &__title{
+    color: #{$text-color};
+    line-height: 1.56;
+    @include fluidx(36px,30px,font-size);
+    font-weight: 500;
+    font-family: $font-primary;
+  }
+  &__time{
+    color: #AAAAAA;
+    line-height: 1;
+    font-size: 16px;
+  }
+  &__category{
+    color: #BD2411;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__desc{
+    color: #000000;
+    line-height: 1.75;
+    font-size: 16px;
+    font-family: $font-primary;
+  }
+  &__thumbnail{
+
+  }
+  &__article{
+    >*{
+      color: #000000;
+      line-height: 1.75;
+      font-size: 16px;
+      font-family: $font-primary;
+    }
+  }
+}
