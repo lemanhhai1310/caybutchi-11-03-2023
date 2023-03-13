@@ -5,8 +5,9 @@
 <div class="about__section1">
     <div class="uk-container">
         <ul class="uk-breadcrumb about__breadcrumb">
-            <li><a href=".">Trang chủ </a></li>
-            <li><span>Giới thiệu</span></li>
+            <li><a href=".">Trang chủ</a></li>
+            <li><a href="khoahoc.php">Khoá học</a></li>
+            <li><span>Lộ trình lớp học Tiếng Việt V2.4</span></li>
         </ul>
     </div>
 </div>
