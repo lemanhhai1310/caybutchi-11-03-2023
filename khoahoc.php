@@ -96,7 +96,7 @@
                     <td>Thứ 7</td>
                     <td>18:00-20:00</td>
                     <td>Dương Hằng</td>
-                    <td><a href="" class="khoahoc__table__link">Xem Chi tiết</a></td>
+                    <td><a href="chitietkhoahoc.php" class="khoahoc__table__link">Xem Chi tiết</a></td>
                 </tr>
                 <?php endfor; ?>
                 </tbody>

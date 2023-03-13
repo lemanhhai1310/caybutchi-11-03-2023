@@ -1,0 +1,134 @@
+.chitietkhoahoc{
+  &__sidebar{
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    .uk-card-body{
+      padding: 20px;
+    }
+    &__txt{
+      color: rgba(38, 38, 38, 0.8);
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 500;
+      font-family: $font-primary;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-right: 8px;
+      }
+    }
+    &__price{
+      color: #BD2411;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 700;
+      font-family: $font-primary;
+    }
+    &__btn{
+      $h:48px;
+      text-transform: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $font-primary;
+      @include media-breakpoint-up('m'){
+        line-height: calc(#{$h} - 2px);
+        border-radius: 8px;
+      }
+      svg{
+        margin-left: 8px;
+      }
+      &--addCart{
+        border-color: #{$primary-color};
+        color: #{$primary-color};
+      }
+      &--pay{
+        background: #{$primary-color};
+        &:hover{
+          background: rgba($primary-color,.8);
+        }
+      }
+    }
+  }
+  &__navbar{
+    border-bottom: 2px solid #ECECEC;
+    .uk-navbar-nav{
+      >li{
+        >a{
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: calc(102% - 0px);
+            bottom: -2px;
+            height: 2px;
+            background-color: currentColor;
+            transition: .3s ease-in-out;
+            transition-property: right;
+          }
+          min-height: 50px;
+          text-transform: inherit;
+          color: #{$text-color};
+          font-size: 16px;
+          font-weight: 600;
+          font-family: $font-primary;
+          position: relative;
+          &:hover{
+            &:before{
+              right: 0;
+            }
+            color: #C8AD90;
+          }
+        }
+        &.uk-active{
+          >a{
+            &:before{
+              right: 0;
+            }
+            color: #C8AD90;
+          }
+        }
+      }
+    }
+  }
+  &__boxCard{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    min-height: 532px;
+    &__item{
+      background: #FAFAFA;
+      border: 1px solid #ECECEC;
+      border-radius: 8px;
+      padding-right: 50px;
+      &__txt{
+        color: #BD2411;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $font-primary;
+      }
+      .uk-icon{
+        color: #{$primary-color};
+      }
+    }
+    .uk-card-title{
+      color: #{$text-color};
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 600;
+      font-family: $font-primary;
+    }
+    .uk-article{
+      color: #{$text-color};
+    }
+    .uk-article-title{
+      color: #BD2411;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $font-primary;
+      line-height: 1;
+    }
+  }
+}

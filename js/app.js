@@ -11,6 +11,19 @@ const app = {
         const app = x('#app');
         const header = x('.header');
         const about__section1 = x('.about__section1');
+        const chitietkhoahoc__sidebar = x('.chitietkhoahoc__sidebar');
+
+        const stickyChitietkhoahoc__sidebar = () => {
+            if (chitietkhoahoc__sidebar){
+                const h_header = header ? header.offsetHeight + 'px' : 0
+                const h_about__section1 = about__section1 ? about__section1.offsetHeight + 'px' : 0
+                UIkit.sticky(chitietkhoahoc__sidebar, {
+                    'offset': h_header+h_about__section1 + 20,
+                    'start': 0.01 + 'px',
+                    'end': true,
+                });
+            }
+        }
 
         const stickyHeader = () => {
             if (header){
@@ -32,11 +45,13 @@ const app = {
 
         stickyHeader()
         stickyBreadcrumd()
+        stickyChitietkhoahoc__sidebar()
 
         onresize = (event) => {
             console.log('onresize')
             stickyHeader()
             stickyBreadcrumd()
+            stickyChitietkhoahoc__sidebar()
         };
 
         document.onscroll = function () {
@@ -44,6 +59,7 @@ const app = {
             console.log('scrollTop',scrollTop);
             stickyHeader()
             stickyBreadcrumd()
+            stickyChitietkhoahoc__sidebar()
             if (scrollTop > 0){
 
             }else {
