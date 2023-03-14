@@ -38,7 +38,8 @@ const app = {
                 const h_header = header ? header.offsetHeight + 'px' : 0
                 console.log('height Header', h_header);
                 UIkit.sticky(about__section1, {
-                    'offset': h_header
+                    'offset': h_header,
+                    'media': '@m'
                 });
             }
         }
