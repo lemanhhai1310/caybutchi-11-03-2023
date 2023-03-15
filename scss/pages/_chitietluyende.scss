@@ -1,1 +1,16 @@
-.chitietluyende{}
+.chitietluyende{
+  &__title{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: $font-primary;
+    line-height: 1;
+    @include fluidx(36px,30px,font-size);
+  }
+  &__txt{
+    color: #000000;
+    font-size: 16px;
+    line-height: 1;
+    font-family: $font-primary;
+  }
+}

@@ -15,7 +15,9 @@
 
 <div class="uk-section home__section">
     <div class="uk-container">
-
+        <h1 class="uk-h1 uk-text-center chitietluyende__title">Đề số 3</h1>
+        <div class="uk-text-center chitietluyende__txt item__20">(Đề thi lớp 6 chủ đề tiếng việt)</div>
+        <div class="item__40-20"><img class="uk-width" src="images/image12.png" alt=""></div>
     </div>
 </div>
 
