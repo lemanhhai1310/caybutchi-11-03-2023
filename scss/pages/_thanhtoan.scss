@@ -1,0 +1,53 @@
+.thanhtoan{
+  &__title{
+    color: #262626;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  &__txt{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    a{
+
+    }
+    .uk-text-danger{
+      color: #BD2411;
+      text-decoration: underline;
+    }
+  }
+  &__form{
+    &__label{
+      color: #262626;
+      font-size: 16px;
+    }
+    &__input{
+      min-height: 48px;
+      background: #FAFAFA;
+      border: 1px solid rgba(38, 38, 38, 0.1);
+      border-radius: 5px;
+    }
+  }
+  &__payment{
+    &__method{
+      background: #FFFFFF;
+      /* Yeellow */
+
+      border: 1px solid #FDC948;
+      border-radius: 6px;
+      padding: 16px 20px;
+      color: #000000;
+      font-size: 16px;
+      &.uk-open + .thanhtoan__payment__content{
+        display: block !important;
+      }
+    }
+    &__content{
+      margin-top: 12px;
+      padding: 20px;
+      background: #FDC948;
+      border-radius: 11px;
+      color: #262626;
+      font-size: 16px;
+    }
+  }
+}

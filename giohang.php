@@ -83,7 +83,7 @@
                                 <div class="giohang__card__gia">2.000.000 đ</div>
                             </div>
                         </div>
-                        <a href="" class="uk-button giohang__card__btn item__40-20 uk-button-secondary uk-width">
+                        <a href="thanhtoan.php" class="uk-button giohang__card__btn item__40-20 uk-button-secondary uk-width">
                             Tiến thành thanh toán
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.34455 8.66796H13.0555L10.8615 10.862C10.2313 11.4922 11.1766 12.4375 11.8068 11.8073L13.8049 9.806L15.1388 8.47004C15.3973 8.20998 15.3973 7.78998 15.1388 7.52992L11.8068 4.194C11.68 4.06373 11.5055 3.99064 11.3237 3.99215C10.7236 3.99223 10.4291 4.72319 10.8615 5.13934L13.0607 7.33338H1.31004C0.38578 7.37924 0.454791 8.71397 1.34455 8.66796Z" fill="white"/>

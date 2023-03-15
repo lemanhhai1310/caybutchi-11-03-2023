@@ -51,6 +51,40 @@
       font-size: 20px;
       font-weight: 600;
     }
+    &__giamgia{
+      &__input{
+        border-color: #FDC948;
+        border-radius: 5px 0px 0px 5px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        &::placeholder{
+          color: rgba(0, 0, 0, 0.4);
+        }
+        @include media-breakpoint-up('m'){
+          min-height: 48px;
+        }
+      }
+      &__btnSubmit{
+        background: rgba(#FDC948,.6);
+        border-radius: 0px 5px 5px 0px;
+        text-transform: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 20px;
+        $h:48px;
+        @include media-breakpoint-up('m'){
+          line-height: calc(#{$h} - 2px);
+        }
+      }
+    }
+    &__txtTong{
+      color: #262626;
+      font-size: 24px;
+      font-weight: 500;
+      &--c1{
+        color: #BD2411;
+      }
+    }
     &__btn{
       background: #FDC948;
       border-radius: 8px;

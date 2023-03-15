@@ -210,7 +210,7 @@
                     </li>
                 </ul>
                 <div class="uk-navbar-item">
-                    <button class="header__btnLogin uk-button uk-button-secondary">
+                    <a href="dangnhap.php" class="header__btnLogin uk-button uk-button-secondary">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_225_625)">
                                 <path d="M8.00121 8.3084C10.2869 8.3084 12.1554 6.43993 12.1554 4.1542C12.1554 1.86847 10.2869 0 8.00121 0C5.71548 0 3.84705 1.86847 3.84705 4.1542C3.84705 6.43993 5.71552 8.3084 8.00121 8.3084Z" fill="currentColor"/>
@@ -223,7 +223,7 @@
                             </defs>
                         </svg>
                         Đăng nhập
-                    </button>
+                    </a>
                 </div>
             </div>
 
