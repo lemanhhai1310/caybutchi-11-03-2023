@@ -1,4 +1,4 @@
-<?php $data["title"] = "Đăng Nhập"; ?>
+<?php $data["title"] = "Đăng ký"; ?>
 <?php $isLogin = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="dangnhap__bg">
@@ -18,9 +18,16 @@
                         <form class="dangnhap__form">
                             <fieldset class="uk-fieldset">
 
-                                <legend class="uk-legend uk-text-center dangnhap__form__title">Đăng nhập</legend>
+                                <legend class="uk-legend uk-text-center dangnhap__form__title">Đăng ký</legend>
 
                                 <div class="item__60-30">
+                                    <div class="uk-inline uk-width">
+                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                        <input class="uk-input dangnhap__form__input" type="text" aria-label="Not clickable icon" placeholder="Họ và tên">
+                                    </div>
+                                </div>
+
+                                <div class="uk-margin">
                                     <div class="uk-inline uk-width">
                                         <span class="uk-form-icon" uk-icon="icon: mail"></span>
                                         <input class="uk-input dangnhap__form__input" type="text" aria-label="Not clickable icon" placeholder="Email/Số điện thoại">
@@ -35,16 +42,25 @@
                                     </div>
                                 </div>
 
-                                <div class="uk-margin-top uk-grid uk-flex-middle" uk-grid>
-                                    <div class="uk-width-expand">
-                                        <label class="dangnhap__form__labelCheckbox"><input class="uk-checkbox" type="checkbox" checked> Ghi nhớ tài khoản</label>
-                                    </div>
-                                    <div class="uk-width-auto">
-                                        <a href="quenmatkhau.php" class="dangnhap__form__txtForgot">Quên mật khẩu?</a>
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: eye-slash"></a>
+                                        <input class="uk-input dangnhap__form__input" type="password" aria-label="Clickable icon" placeholder="Nhập lại mật khẩu">
                                     </div>
                                 </div>
 
-                                <button class="uk-button uk-button-secondary uk-width dangnhap__form__btnSubmit item__40-20">Đăng nhập</button>
+                                <div class="uk-margin-top uk-grid uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <label class="dangnhap__form__labelCheckbox"><input class="uk-checkbox" type="checkbox" checked> Tạo tài khoản có nghĩa là bạn đồng ý với
+                                            <a href="">Điều khoản dịch vụ</a> và <a href="">Chính sách quyền riêng tư</a> của chúng tôi.</label>
+                                    </div>
+                                    <div class="uk-width-auto uk-hidden">
+
+                                    </div>
+                                </div>
+
+                                <button class="uk-button uk-button-secondary uk-width dangnhap__form__btnSubmit item__40-20">Đăng ký</button>
                                 <div class="item__40-20 uk-position-relative dangnhap__form__Or">
                                     <span class="uk-position-center dangnhap__form__Or__txt">Hoặc</span>
                                     <hr class="uk-divider-icon">
@@ -54,7 +70,7 @@
                                     <a href="" class="uk-icon-button dangnhap__form__icon dangnhap__form__icon--google" uk-icon="google"></a>
                                 </div>
                                 <div class="item__40-20 uk-text-center dangnhap__form__txtDangky">
-                                    Bạn chưa có tài khoản? <a href="dangky.php" class="uk-text-warning">Đăng ký</a>
+                                    Bạn đã có tài khoản? <a href="dangnhap.php" class="uk-text-warning">Đăng nhập</a>
                                 </div>
                             </fieldset>
                         </form>
