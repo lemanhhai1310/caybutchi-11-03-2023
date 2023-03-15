@@ -1,0 +1,22 @@
+.luyenthi{
+  &__cardItem{
+    padding: 20px;
+    background: #FDC948;
+    border-radius: 8px;
+    &__btn{
+      //font-size: 24px;
+      @include fluidx(24px,16px,font-size);
+      color: #{$text-color} !important;
+      font-weight: 600;
+      font-family: $font-primary;
+      background: #FFED4A;
+      $h:48px;
+      @include media-breakpoint-up('m'){
+        line-height: calc(#{$h} - 2px);
+      }
+      &:hover{
+        background: rgba(#FFED4A,.8);
+      }
+    }
+  }
+}
