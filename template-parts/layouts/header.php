@@ -191,7 +191,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="giohang.php">
                             <div class="uk-text-center">
                                 <div>
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

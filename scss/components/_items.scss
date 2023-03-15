@@ -17,6 +17,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:28;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:24;
   &__#{$x}{
     &:nth-child(n+2){
@@ -106,6 +112,17 @@
 
   $max:60;
   $min:30;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
+
+  $max:54;
+  $min:20;
   &__#{$max}-#{$min}{
     &:nth-child(n+2){
       margin-top: #{$min}px;

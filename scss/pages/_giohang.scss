@@ -1,0 +1,132 @@
+.giohang{
+  &__card{
+    width: 413px;
+    max-width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    &__dc{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .uk-card-header{
+      background: #FDC948;
+      border-radius: 9px 9px 0px 0px;
+      @extend .giohang__card__dc;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #363636;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $font-primary;
+    }
+    .uk-card-body{
+      @extend .giohang__card__dc;
+      padding: 20px;
+    }
+    hr{
+
+    }
+    &__label{
+      color: #000000;
+      font-size: 16px;
+    }
+    &__name{
+      color: #BD2411;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &__sltxt{
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &__tamtinhtxt{
+      color: #262626;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &__gia{
+      color: #262626;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    &__btn{
+      background: #FDC948;
+      border-radius: 8px;
+      text-transform: inherit;
+      $h:48px;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $font-primary;
+      @include media-breakpoint-up('m'){
+        line-height: calc(#{$h} - 2px);
+      }
+      svg{
+        margin-left: 8px;
+      }
+    }
+  }
+  &__title{
+    color: #262626;
+    //font-size: 36px;
+    @include fluidx(36px,30px,font-size);
+    font-family: $font-primary;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+    padding-bottom: 24px;
+    position: relative;
+    &:after{
+      content: "";
+      width: 100px;
+      height: 3px;
+      background: #FDC948;
+      display: flex;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+    svg{
+      margin-left: 16px;
+    }
+  }
+  &__item{
+    background: #FEF5D8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    &__img{
+
+    }
+    &__name{
+      color: #262626;
+      font-size: 20px;
+      font-weight: 500;
+      a{
+        color: #262626;
+      }
+    }
+    &__txt{
+      color: rgba(38, 38, 38, 0.8);
+      font-size: 14px;
+    }
+    &__gia{
+      color: #BD2411;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &__close{
+      background: rgba(38, 38, 38, 0.28);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      z-index: 990;
+      svg{
+        width: 10px;
+      }
+    }
+  }
+}
