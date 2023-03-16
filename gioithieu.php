@@ -164,7 +164,120 @@
 <div class="uk-section home__section">
     <div class="uk-container">
         <h2 class="uk-h2 uk-text-center about__title">Những dấu ấn trong hành trình của chúng tôi</h2>
-        
+
+        <!--Slide Timeline-->
+        <div class="item__60-30" uk-slider="sets: true;finite: true">
+
+            <div class="uk-position-relative about__history__relative">
+
+                <div class="uk-slider-container uk-slider-container-offset">
+                    <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m" uk-grid>
+                        <?php for ($i=1;$i<=2;$i++): ?>
+                        <li class="about__history__li">
+                            <div class="about__history__title">Cây Bút Nhỏ và những bước đi đầu tiên</div>
+                            <div class="about__history__desc item__12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                            <div class="item__8">
+                                <img src="images/img_xoay.png" alt="">
+                            </div>
+                            <div>
+                                <time class="about__history__time uk-label uk-label-warning uk-border-pill">8/3/2021</time>
+                            </div>
+                            <div>
+                                <div class="about__history__cardImg uk-display-inline-block uk-card uk-card-default uk-padding-small">
+                                    <div class="uk-cover-container uk-display-inline-block">
+                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                        <canvas width="240" height="140"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about__history__li">
+                            <div class="uk-section">
+
+                            </div>
+                            <div>
+                                <div class="about__history__cardImg uk-display-inline-block uk-card uk-card-default uk-padding-small">
+                                    <div class="uk-cover-container uk-display-inline-block">
+                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                        <canvas width="240" height="140"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <time class="about__history__time uk-label uk-label-warning uk-border-pill">8/3/2021</time>
+                            </div>
+                            <div>
+                                <img src="images/img_xoay1.png" alt="">
+                            </div>
+                            <div class="about__history__title">Cây Bút Nhỏ và những bước đi đầu tiên</div>
+                            <div class="about__history__desc item__12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </li>
+                        <?php endfor; ?>
+                    </ul>
+                </div>
+
+                <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slider-item="previous">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_243_767)">
+                                <path d="M20.0001 0C31.0458 0 40 8.95422 40 19.9999C40 31.0455 31.0458 40.0001 20.0001 40.0001C8.95447 40.0001 -0.000118256 31.0455 -0.000118256 19.9999C0.0123329 8.95935 8.95923 0.0124511 20.0001 0ZM20.0001 37.9999C29.9413 37.9999 38.0001 29.941 38.0001 19.9999C38.0001 10.0587 29.9413 1.99988 20.0001 1.99988C10.059 1.99988 2.00013 10.0587 2.00013 19.9999C2.01148 29.9363 10.0637 37.9885 20.0001 37.9999Z" fill="#FDC948"/>
+                                <path d="M22.3417 12.2472C22.7577 11.8836 23.3894 11.9261 23.7531 12.3417C24.1163 12.7577 24.0739 13.3895 23.6582 13.7531L16.5186 19.9999L23.6586 26.2471C24.0746 26.6108 24.1167 27.2425 23.7534 27.6581C23.3898 28.0742 22.7581 28.1166 22.342 27.753L14.3422 20.7529C14.125 20.5632 14.0005 20.2885 14.0005 19.9999C14.0005 19.7114 14.125 19.4371 14.3422 19.247L22.3417 12.2472Z" fill="#FDC948"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_243_767">
+                                    <rect width="40" height="40" fill="white" transform="matrix(-1 0 0 1 40 0)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slider-item="next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_243_764)">
+                                <path d="M19.9999 0C8.95422 0 0 8.95422 0 19.9999C0 31.0455 8.95422 40.0001 19.9999 40.0001C31.0455 40.0001 40.0001 31.0455 40.0001 19.9999C39.9877 8.95935 31.0408 0.0124511 19.9999 0ZM19.9999 37.9999C10.0587 37.9999 1.99988 29.941 1.99988 19.9999C1.99988 10.0587 10.0587 1.99988 19.9999 1.99988C29.941 1.99988 37.9999 10.0587 37.9999 19.9999C37.9885 29.9363 29.9363 37.9885 19.9999 37.9999Z" fill="#FDC948"/>
+                                <path d="M17.6583 12.2472C17.2423 11.8836 16.6106 11.9261 16.2469 12.3417C15.8837 12.7577 15.9261 13.3895 16.3418 13.7531L23.4814 19.9999L16.3414 26.2471C15.9254 26.6108 15.8833 27.2425 16.2466 27.6581C16.6102 28.0742 17.2419 28.1166 17.658 27.753L25.6578 20.7529C25.875 20.5632 25.9995 20.2885 25.9995 19.9999C25.9995 19.7114 25.875 19.4371 25.6578 19.247L17.6583 12.2472Z" fill="#FDC948"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_243_764">
+                                    <rect width="40" height="40" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-medium" href="#" uk-slider-item="previous">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_243_767)">
+                                <path d="M20.0001 0C31.0458 0 40 8.95422 40 19.9999C40 31.0455 31.0458 40.0001 20.0001 40.0001C8.95447 40.0001 -0.000118256 31.0455 -0.000118256 19.9999C0.0123329 8.95935 8.95923 0.0124511 20.0001 0ZM20.0001 37.9999C29.9413 37.9999 38.0001 29.941 38.0001 19.9999C38.0001 10.0587 29.9413 1.99988 20.0001 1.99988C10.059 1.99988 2.00013 10.0587 2.00013 19.9999C2.01148 29.9363 10.0637 37.9885 20.0001 37.9999Z" fill="#FDC948"/>
+                                <path d="M22.3417 12.2472C22.7577 11.8836 23.3894 11.9261 23.7531 12.3417C24.1163 12.7577 24.0739 13.3895 23.6582 13.7531L16.5186 19.9999L23.6586 26.2471C24.0746 26.6108 24.1167 27.2425 23.7534 27.6581C23.3898 28.0742 22.7581 28.1166 22.342 27.753L14.3422 20.7529C14.125 20.5632 14.0005 20.2885 14.0005 19.9999C14.0005 19.7114 14.125 19.4371 14.3422 19.247L22.3417 12.2472Z" fill="#FDC948"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_243_767">
+                                    <rect width="40" height="40" fill="white" transform="matrix(-1 0 0 1 40 0)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="uk-position-center-right-out uk-position-medium" href="#" uk-slider-item="next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_243_764)">
+                                <path d="M19.9999 0C8.95422 0 0 8.95422 0 19.9999C0 31.0455 8.95422 40.0001 19.9999 40.0001C31.0455 40.0001 40.0001 31.0455 40.0001 19.9999C39.9877 8.95935 31.0408 0.0124511 19.9999 0ZM19.9999 37.9999C10.0587 37.9999 1.99988 29.941 1.99988 19.9999C1.99988 10.0587 10.0587 1.99988 19.9999 1.99988C29.941 1.99988 37.9999 10.0587 37.9999 19.9999C37.9885 29.9363 29.9363 37.9885 19.9999 37.9999Z" fill="#FDC948"/>
+                                <path d="M17.6583 12.2472C17.2423 11.8836 16.6106 11.9261 16.2469 12.3417C15.8837 12.7577 15.9261 13.3895 16.3418 13.7531L23.4814 19.9999L16.3414 26.2471C15.9254 26.6108 15.8833 27.2425 16.2466 27.6581C16.6102 28.0742 17.2419 28.1166 17.658 27.753L25.6578 20.7529C25.875 20.5632 25.9995 20.2885 25.9995 19.9999C25.9995 19.7114 25.875 19.4371 25.6578 19.247L17.6583 12.2472Z" fill="#FDC948"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_243_764">
+                                    <rect width="40" height="40" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <!--/Slide Timeline-->
     </div>
 </div>
 <!--/Những dấu ấn trong hành trình của chúng tôi-->
