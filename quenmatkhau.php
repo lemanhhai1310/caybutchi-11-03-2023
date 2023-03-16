@@ -1,4 +1,4 @@
-<?php $data["title"] = "Đăng ký"; ?>
+<?php $data["title"] = "Quên mật khẩu?"; ?>
 <?php $isLogin = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="dangnhap__bg">
