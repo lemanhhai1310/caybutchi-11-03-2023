@@ -18,7 +18,7 @@
             <div class="uk-width-expand">
                 <div class="uk-margin-medium">
                     <div class="thanhtoan__title">Thông tin khách hàng</div>
-                    <div class="thanhtoan__txt item__40-20">Nhập thông tin dưới đây hoặc <a href="" class="uk-text-danger">đăng nhập</a> nếu bạn đã có tài khoản.</div>
+                    <div class="thanhtoan__txt item__40-20">Nhập thông tin dưới đây hoặc <a href="dangnhap.php" class="uk-text-danger">đăng nhập</a> nếu bạn đã có tài khoản.</div>
                     <form class="uk-form-stacked thanhtoan__form item__40-20">
 
                         <div class="uk-margin">
